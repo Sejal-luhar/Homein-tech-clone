@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family:helvetica;
+    /* font-weight: 100; */
+   /* letter-spacing: 1px; */
+   
+   background-color: black;
+   
+}
+nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 60px  50px;
+    align-items: center;
+    position: fixed;
+}
+nav>img{
+    width: 200px;
+}
+.links{
+   
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(221, 217, 217, 0.644);
+}
+.links>button{
+    background-color: rgb(168, 233, 70);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.links>a {
+    margin:0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+.buttons>button{
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 3px rgba(204, 200, 200, 0.692);
+    margin-right: 20px;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 20px;
+}
+.butt{
+    color: white;
+}
+nav>i{
+    display: none;
+}
+
+
+.main{
+    color: white;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+}
+.main>h1{
+    width: 75%;
+    margin-top: 10%;
+    font-size: 110px;
+    font-weight: 100;
+}
+.main>h1>span{
+    color: black;
+    background-color: rgb(186, 186, 226);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 60px;
+    font-size: 100px;
+}
+.main>button{
+    font-size: 20px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(202, 253, 63);
+    margin: 20px;
+}
+.main>img{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 8%;
+    top: 40%;
+    transition: 1s linear all;
+    transform:rotate(360deg);
+}
+
+.content{
+    width: 100%;
+    margin-top: 10%;
+    background-color: white;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding: 4%;
+    position: relative;
+}
+.content>h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+.content-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content-text{
+    width: 50%;
+}
+.content-text>p{
+    width: 90%;
+    line-height: 40px;
+    font-size: 33px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.buttons-container{
+    width: 50%;
+    font-size: 22px;
+}
+.buttons-container>h2{
+    padding: 22px 30px;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 15px  0;
+}
+.buttons-container>h2:nth-child(1){
+    transform: rotate(-5deg);
+    
+    background-color: rgb(97, 219, 189);
+
+}
+.buttons-container>h2:nth-child(2){
+    transform: rotate(5deg);
+    background-color: rgb(231, 233, 112);
+
+}
+.buttons-container>h2:nth-child(3){
+    transform: rotate(6deg);
+    background-color: rgb(169, 177, 175);
+
+}
+.buttons-container>h2:nth-child(4){
+    transform: rotate(-10deg);
+    background-color: rgb(93, 95, 95);
+
+}
+.buttons-container>h2:nth-child(5){
+    transform: rotate(9deg);
+    background-color: rgb(95, 93, 214);
+
+}
+
+.image-container{
+    width: 100%;
+    background-color: white;
+    padding: 50px 30px;
+    text-align: center;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+.image-container>h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 10%;
+
+}
+.images{
+    margin: 30px 20px ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.img, .imge{
+width: 40%;
+padding-bottom: 20px;
+transition: 0.25s;
+overflow: hidden;
+text-align: initial;
+}
+.img1{
+    width: 25%;
+    transition: 0.25s;
+    overflow: hidden;
+    text-align: initial;
+}
+
+.img1>img, .img>img, .imge>img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.img>span, .imge>span, .img1>span{
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 17px;
+    background-color: rgb(216, 211, 211);
+    margin: 10px 5px;
+    border-radius: 20px;
+}
+
+.images img:hover{
+    transform: scale(1.2);
+}
+.image-container>button{
+   
+   width: 90%;
+    background-color: rgb(162, 233, 95);
+    padding: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+
+}
+.image-container>button:hover{
+    background-color: rgb(219, 250, 84);
+}
+
+footer{
+    width: 100%;
+    padding: 150px 80px ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer>h1{
+    width: 50%;
+    font-size: 80px;
+    color: white;
+    margin-top: 30px;
+    line-height: 100px;
+}
+form{
+    width: 50%;
+  
+}
+form>input{
+    width: 90%;
+    padding: 40px 20px;
+    margin: 8px 0;
+    border-radius: 25px;
+    font-size: 18px;
+}
+form>textarea{
+    width: 90%;
+    padding: 40px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    font-size: 18px;
+}
+form>button{
+    width: 90%;
+    padding: 30px 20px;
+    margin: 8px 0;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: rgb(181, 255, 85) ;
+}
+
+.footer-container{
+    width: 100%;
+    background-color: white;
+    padding: 60px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.contact{
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(197, 196, 196);
+}
+.contact>h6{
+    font-size: 18px;
+    margin: 30px 0;
+}
+.contact>h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.contact>a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 40px;
+    background-color: rgb(178, 131, 223);
+    border-radius: 20px;
+    font-size: 18px;
+    margin-right: 40px;
+}
+#a3:hover{
+    /* position: absolute; */
+    transform: translateY(-6px);
+}
+#a2:hover{
+    transform: translateY(-6px);
+}
+#a1:hover{
+    transform: translateY(-6px);
+}
+#a1{
+    transition: 0.25s;
+}
+
+#a2{
+    background-color: rgb(212, 212, 241);
+    transition: 0.25s;
+}
+#a3{
+    margin-right: 0;
+    background-color:rgb(181, 255, 85) ;
+    transition: 0.25s;
+}
+.copyright{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+
+
